@@ -49,5 +49,10 @@ app.get('/', (req, res) => {
     res.send('API is running...');
 });
 
+app.use((err, req, res, next) => {
+    console.error("Express Error:", err);
+    res.status(500).json({ message: 'Server Error', details: err.message || err });
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
