@@ -43,7 +43,7 @@ const Navbar = () => {
                         </ul>
                         <div className="nav-actions">
                             <Link to="/books" className="search-icon" onClick={() => setIsMobileMenuOpen(false)}><FiSearch /></Link>
-                            {user && user.username === 'admin' && (
+                            {user && (
                                 <button className="btn-primary upload-btn" onClick={() => { setIsUploadModalOpen(true); setIsMobileMenuOpen(false); }}>
                                     <FiUpload /> Upload
                                 </button>

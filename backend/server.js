@@ -23,12 +23,15 @@ app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 app.use(express.urlencoded({ extended: true }));
 
+app.set('trust proxy', 1);
 app.use(session({
     secret: process.env.SESSION_SECRET || 'secret123',
     resave: false,
     saveUninitialized: false,
     cookie: {
-        maxAge: 1000 * 60 * 60 * 24
+        maxAge: 1000 * 60 * 60 * 24,
+        sameSite: 'none',
+        secure: true
     }
 }));
 

@@ -2,15 +2,11 @@ const Book = require('../models/Book');
 
 exports.createBook = async (req, res) => {
     try {
-        if (!req.user || req.user.username !== 'admin') {
-            return res.status(403).json({ message: 'Forbidden: Only admin can upload books' });
+        if (!req.user) {
+            return res.status(401).json({ message: 'Not authorized, please log in' });
         }
 
         const { title, author, category, description } = req.body;
-        
-        if (category.toLowerCase() !== 'civil' && category.toLowerCase() !== 'electrical') {
-            return res.status(400).json({ message: 'Invalid category. Only Civil and Electrical are allowed.' });
-        }
         
         if (!req.files || !req.files.coverImage || !req.files.pdfFile) {
             return res.status(400).json({ message: 'Cover image and PDF file are required' });
