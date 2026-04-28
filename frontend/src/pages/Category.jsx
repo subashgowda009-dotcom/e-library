@@ -12,7 +12,7 @@ const Category = () => {
         const fetchBooksByCategory = async () => {
             try {
                 setLoading(true);
-                const { data } = await axios.get(`http://localhost:5000/api/books/category/${categoryName}`);
+                const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/books/category/${categoryName}`);
                 setBooks(data);
             } catch (error) {
                 console.error('Failed to fetch category books', error);

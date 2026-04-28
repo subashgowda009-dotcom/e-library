@@ -15,7 +15,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('http://localhost:5000/api/auth/register', { username, email, password }, { withCredentials: true });
+            const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/register`, { username, email, password }, { withCredentials: true });
             login(data.user);
             navigate('/');
         } catch (err) {

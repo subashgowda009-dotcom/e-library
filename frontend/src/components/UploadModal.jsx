@@ -31,7 +31,7 @@ const UploadModal = ({ isOpen, onClose }) => {
         if (pdfFile) formData.append('pdfFile', pdfFile);
 
         try {
-            await axios.post('http://localhost:5000/api/books', formData, {
+            await axios.post(`${import.meta.env.VITE_API_URL}/books`, formData, {
                 withCredentials: true,
                 headers: { 'Content-Type': 'multipart/form-data' }
             });

@@ -26,7 +26,7 @@ const Home = () => {
     const fetchBooks = async (query) => {
         try {
             setLoading(true);
-            const url = query ? `http://localhost:5000/api/books/search?q=${query}` : 'http://localhost:5000/api/books';
+            const url = query ? `${import.meta.env.VITE_API_URL}/books/search?q=${query}` : `${import.meta.env.VITE_API_URL}/books`;
             const { data } = await axios.get(url);
             setBooks(data);
         } catch (error) {

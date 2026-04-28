@@ -12,7 +12,7 @@ const PdfReader = () => {
     useEffect(() => {
         const fetchBook = async () => {
             try {
-                const { data } = await axios.get(`http://localhost:5000/api/books/${id}`);
+                const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/books/${id}`);
                 setPdfUrl(data.fileUrl);
             } catch (error) {
                 console.error('Failed to fetch book pdf', error);
