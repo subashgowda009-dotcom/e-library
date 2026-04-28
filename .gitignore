@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment Variables (CRITICAL: Do not commit secrets)
+.env
+.env.*
+
+# Build outputs
+frontend/dist/
+dist/
+dist-ssr/
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore large PDFs in the root directory
+*.pdf

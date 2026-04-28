@@ -1,0 +1,38 @@
+.pdf-reader-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-color);
+    z-index: 2000;
+}
+
+.reader-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.back-btn:hover {
+    color: var(--accent-color);
+}
+
+.pdf-container {
+    flex: 1;
+    overflow: hidden;
+    background: #e5e5e5;
+}
