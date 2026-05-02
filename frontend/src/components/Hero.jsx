@@ -25,7 +25,7 @@ const Hero = () => {
                         Read. Learn.<br/>Grow <span className="gradient-text">Together.</span>
                     </h1>
                     <p className="hero-subtitle">
-                        Explore thousands of eBooks, research papers, and resources from various genres and categories.
+                        Access a specialized collection of resources and research papers tailored for Civil and Electrical engineering.
                     </p>
                     
                     <form className="hero-search glass-card" onSubmit={handleSearch}>
@@ -63,38 +63,7 @@ const Hero = () => {
                 </div>
             </div>
             
-            <div className="container stats-container">
-                <div className="stats-strip glass-card">
-                    <div className="stat-item">
-                        <div className="stat-icon b-purple"><FiBookOpen/></div>
-                        <div>
-                            <h4>10,000+</h4>
-                            <p>Books Available</p>
-                        </div>
-                    </div>
-                    <div className="stat-item">
-                        <div className="stat-icon b-green"><FiUsers/></div>
-                        <div>
-                            <h4>5,000+</h4>
-                            <p>Active Readers</p>
-                        </div>
-                    </div>
-                    <div className="stat-item">
-                        <div className="stat-icon b-yellow"><FiLayers/></div>
-                        <div>
-                            <h4>50+</h4>
-                            <p>Categories</p>
-                        </div>
-                    </div>
-                    <div className="stat-item">
-                        <div className="stat-icon b-pink"><FiAward/></div>
-                        <div>
-                            <h4>100+</h4>
-                            <p>Top Authors</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </section>
     );
 };

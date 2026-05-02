@@ -11,7 +11,7 @@ const About = () => {
                 </p>
                 <p style={{ lineHeight: '1.8', color: 'var(--text-secondary)' }}>
                     Our platform offers a seamless reading experience with a curated collection of 
-                    eBooks across multiple genres including Technology, Science, Fiction, and more. 
+                    eBooks across specialized fields including Civil and Electrical Engineering. 
                     Built with modern web technologies, we aim to provide you with the best digital 
                     reading environment possible.
                 </p>

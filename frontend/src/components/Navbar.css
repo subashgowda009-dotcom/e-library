@@ -76,6 +76,7 @@
     padding: 0.5rem;
 }
 
+/* THE UPLOAD BUTTON IN THE NAVBAR */
 .upload-btn {
     display: flex;
     align-items: center;

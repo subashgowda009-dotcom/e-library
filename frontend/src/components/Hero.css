@@ -25,6 +25,7 @@
     color: var(--accent-secondary);
 }
 
+/* MAIN BIG TITLE ON THE HOMEPAGE */
 .hero-title {
     font-size: 4.5rem;
     line-height: 1.1;
@@ -32,6 +33,7 @@
     margin-bottom: 1.5rem;
 }
 
+/* SUBTITLE BELOW THE MAIN TITLE */
 .hero-subtitle {
     font-size: 1.125rem;
     color: var(--text-secondary);
@@ -40,6 +42,7 @@
     line-height: 1.6;
 }
 
+/* THE SEARCH BAR BOX */
 .hero-search {
     display: flex;
     align-items: center;
@@ -139,55 +142,6 @@
     justify-content: center;
 }
 
-/* Stats */
-.stats-container {
-    margin-top: 4rem;
-}
-
-.stats-strip {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 2rem;
-    border-radius: 20px;
-}
-
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 0 1.5rem;
-    border-right: 1px solid var(--glass-border);
-}
-
-.stat-item:last-child {
-    border-right: none;
-}
-
-.stat-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-
-.b-purple { background: rgba(123, 44, 191, 0.2); color: #c77dff; }
-.b-green { background: rgba(30, 215, 96, 0.2); color: #1ed760; }
-.b-yellow { background: rgba(255, 184, 0, 0.2); color: #ffb800; }
-.b-pink { background: rgba(255, 71, 126, 0.2); color: #ff477e; }
-
-.stat-item h4 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.stat-item p {
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-}
-
 @media (max-width: 900px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -199,13 +153,6 @@
     .hero-subtitle {
         margin-left: auto;
         margin-right: auto;
-    }
-    .stats-strip {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-    .stat-item {
-        border-right: none;
     }
 }
 
@@ -230,15 +177,6 @@
     .hero-search .btn-primary {
         width: 100%;
         border-radius: 12px;
-    }
-    .stats-strip {
-        grid-template-columns: 1fr;
-        padding: 1.5rem;
-    }
-    .stat-item {
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
     }
     .image-placeholder {
         height: 350px;
